@@ -1,0 +1,9 @@
+name: "small-gh-action"
+description: "test"
+inputs:
+  gh-token:
+    description: "The GITHUB_TOKEN, needed to update the issue"
+    default: ${{ github.token }}
+runs:
+  using: "docker"
+  image: "docker://ghcr.io/jotdl/small-gh-action"
